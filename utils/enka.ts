@@ -60,7 +60,7 @@ class EnkaRelics {
             await redis.setEx(uid, 60, JSON.stringify(avatars));
             return avatars;
         } catch (error: any) {
-            console.log(error);
+            return null;
         }
     };
     /*

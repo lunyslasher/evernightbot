@@ -21,7 +21,9 @@ const command: Command = {
 
         const avatars = await enka.fetchUser(uid);
 
-        if (!avatars) return;
+        if (!avatars) {
+            return await interaction.reply(`Invalid UID`); 
+        }
 
         const config = new Config(avatars);
 
