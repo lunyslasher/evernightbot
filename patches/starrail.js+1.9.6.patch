@@ -1,0 +1,13 @@
+diff --git a/node_modules/starrail.js/dist/client/StarRail.js b/node_modules/starrail.js/dist/client/StarRail.js
+index bc4f112..3e54f03 100644
+--- a/node_modules/starrail.js/dist/client/StarRail.js
++++ b/node_modules/starrail.js/dist/client/StarRail.js
+@@ -109,7 +109,7 @@ exports.defaultClientOption = {
+     userAgent: "Mozilla/5.0",
+     cacheDirectory: null,
+     showFetchCacheLog: true,
+-    requestTimeout: 3000,
++    requestTimeout: 5000,
+     defaultLanguage: "en",
+     imageBaseUrls: [...defaultImageBaseUrls],
+     githubToken: null,
