@@ -1,0 +1,13 @@
+diff --git a/node_modules/config_file.js/dist/json_utils.js b/node_modules/config_file.js/dist/json_utils.js
+index a133bed..e6958f3 100644
+--- a/node_modules/config_file.js/dist/json_utils.js
++++ b/node_modules/config_file.js/dist/json_utils.js
+@@ -5,7 +5,7 @@ function isFlexJsonElement(options, value) {
+     const type = typeof value;
+     if (type === "number" || type === "boolean" || type === "string" || value === null)
+         return true;
+-    if (options.allowBigint && type === "bigint")
++    if (options && options.allowBigint && type === "bigint")
+         return true;
+     if (type !== "object" || value === undefined)
+         return false;
