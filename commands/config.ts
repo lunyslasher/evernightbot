@@ -17,6 +17,8 @@ const command: Command = {
             return;
         }
 
+        await interaction.deferReply({});
+
         const avatars = await enka.fetchUser(uid);
 
         if (!avatars) return;
@@ -27,7 +29,7 @@ const command: Command = {
             name: `config.json`,
         });
 
-        return await interaction.reply({
+        return await interaction.editReply({
             files: [jsonFile],
         });
     },
